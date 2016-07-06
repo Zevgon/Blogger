@@ -47,4 +47,8 @@ class ArticlesController < ApplicationController
         @comment.article_id = @article.id
     end
 
+    def tag_list
+        tags.join(", ")
+    end
+
 end
